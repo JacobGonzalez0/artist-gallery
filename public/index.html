@@ -22,16 +22,18 @@
                 <li class="p-2">Contact</li>
             </ul>
         </nav>
-        <div class="w-100" style="position:absolute;z-index:-100;top:0;height:100vh;border:solid black 1px;background:url('img/road.jpg')" id="renderer">
-            
+        <div class="w-100 position-absolute fixed-top" style="z-index: -10;">
+            <canvas id="myCanvas"></canvas>
         </div>
         <div class="row justify-content-center align-items-center" style="z-index:1000; height:100vh;">
             <div class="d-flex justify-content-between p-4">
-                <ul class="col-2 list-group bg-white shadow rounded justify-content-between">
-                    <li class="list-group-item ">^</li>
-                    <li class="list-group-item "><strong>Current Item</strong></li>
-                    <li class="list-group-item ">v</li>
-                </ul>
+                <div class="col-3 shadow rounded" style="height:100%">
+                    <ul class="list-group w-100">
+                        <li class="list-group-item list-group-item-action">Up</li>
+                        <li class="list-group-item list-group-item-action">Current</li>
+                        <li class="list-group-item list-group-item-action">Down</li>
+                    </ul>
+                </div>
                 <div class="col-4 bg-white rounded p-4 shadow">
                     <h4>Title</h4>
                     <p>
@@ -43,7 +45,7 @@
             
         </div>
     </div>
-    <footer class="container-fluid bg-dark" style="position:absolute;bottom:0;z-index: 100;">
+    <footer class="container-fluid bg-dark position-absolute fixed-bottom" >
         <div class="d-flex justify-content-between text-white p-3">
             <div>
                 Copyright 2021
@@ -56,4 +58,5 @@
     
     
 </body>
+<script src="index.js"></script>
 </html>
