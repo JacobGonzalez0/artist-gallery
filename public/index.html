@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css'/>
+</head>
+<!-- this is just spitballing designs -->
+<style>
+    body{
+        overflow: hidden;
+    }
+</style>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar text-white p-2">
+            <h2 class="navbrand px-2">Art Website</h2>
+            <ul class="bg-dark rounded nav">
+                <li class="p-2">About</li>
+                <li class="p-2">Gallery</li>
+                <li class="p-2">Contact</li>
+            </ul>
+        </nav>
+        <div class="w-100" style="position:absolute;z-index:-100;top:0;height:100vh;border:solid black 1px;background:url('img/road.jpg')" id="renderer">
+            
+        </div>
+        <div class="row justify-content-center align-items-center" style="z-index:1000; height:100vh;">
+            <div class="d-flex justify-content-between p-4">
+                <ul class="col-2 list-group bg-white shadow rounded justify-content-between">
+                    <li class="list-group-item ">^</li>
+                    <li class="list-group-item "><strong>Current Item</strong></li>
+                    <li class="list-group-item ">v</li>
+                </ul>
+                <div class="col-4 bg-white rounded p-4 shadow">
+                    <h4>Title</h4>
+                    <p>
+                        This is an example description of the current art piece
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <footer class="container-fluid bg-dark" style="position:absolute;bottom:0;z-index: 100;">
+        <div class="d-flex justify-content-between text-white p-3">
+            <div>
+                Copyright 2021
+            </div>
+            <div>
+                By: Jacob Gonzalez
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

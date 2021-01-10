@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "express.js": "^1.0.0"
   },
   "devDependencies": {},
